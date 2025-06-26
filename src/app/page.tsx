@@ -93,8 +93,8 @@ export default function Home() {
       <section style={{ background: 'var(--surface-secondary)', padding: '3rem 0' }}>
         <div className="container">
           <div className="grid grid-4" style={{ gap: '2rem', textAlign: 'center' }}>
-            {stats.map((stat, index) => (
-              <div key={index}>
+            {stats.map((stat, statIndex) => (
+              <div key={statIndex}>
                 <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>{stat.icon}</div>
                 <div style={{ 
                   fontSize: '2.5rem', 
@@ -123,7 +123,7 @@ export default function Home() {
         </div>
         
         <div className="posts-grid">
-          {featuredPosts.map((post, index) => (
+          {featuredPosts.map((post) => (
             <article key={post.slug} className={`card ${post.featured ? 'card-featured' : ''}`}>
               <div className="card-body">
                 <div style={{ 
@@ -179,8 +179,8 @@ export default function Home() {
                 See what our readers are most interested in this month.
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {trendingTopics.map((topic, index) => (
-                  <div key={index} style={{
+                {trendingTopics.map((topic, topicIndex) => (
+                  <div key={topicIndex} style={{
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',
@@ -244,8 +244,8 @@ export default function Home() {
         </div>
         
         <div className="grid grid-3" style={{ gap: '2rem' }}>
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="card">
+          {testimonials.map((testimonial, testimonialIndex) => (
+            <div key={testimonialIndex} className="card">
               <div className="card-body" style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>💬</div>
                 <p style={{ 
@@ -254,7 +254,7 @@ export default function Home() {
                   fontSize: '1.05rem',
                   lineHeight: '1.6'
                 }}>
-                  "{testimonial.quote}"
+                  &ldquo;{testimonial.quote}&rdquo;
                 </p>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem' }}>
                   <div style={{ fontSize: '2rem' }}>{testimonial.avatar}</div>

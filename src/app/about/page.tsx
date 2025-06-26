@@ -7,30 +7,21 @@ export default function AboutPage() {
       role: "Editor-in-Chief",
       bio: "With over a decade of experience in digital journalism, Alexandra brings a passion for storytelling and a keen eye for quality content.",
       image: "👩‍💼",
-      social: {
-        twitter: "#",
-        linkedin: "#"
-      }
+      social: { twitter: "#", linkedin: "#" }
     },
     {
       name: "Marcus Rodriguez",
       role: "Senior Writer",
       bio: "Marcus specializes in technology and culture, weaving complex topics into engaging narratives that resonate with modern readers.",
       image: "👨‍💻",
-      social: {
-        twitter: "#",
-        linkedin: "#"
-      }
+      social: { twitter: "#", linkedin: "#" }
     },
     {
       name: "Sofia Nakamura",
       role: "Creative Director",
       bio: "Sofia combines visual storytelling with editorial excellence, ensuring every piece on The Gilded Post is both beautiful and meaningful.",
       image: "👩‍🎨",
-      social: {
-        twitter: "#",
-        linkedin: "#"
-      }
+      social: { twitter: "#", linkedin: "#" }
     }
   ];
 
@@ -64,7 +55,7 @@ export default function AboutPage() {
         <div className="container">
           <h1 className="hero-title">About The Gilded Post</h1>
           <p className="hero-subtitle">
-            Where exceptional stories meet exceptional readers. We're more than a blog—we're a 
+            Where exceptional stories meet exceptional readers. We&apos;re more than a blog—we&apos;re a 
             community dedicated to exploring ideas that matter.
           </p>
         </div>
@@ -81,7 +72,7 @@ export default function AboutPage() {
               accessible, and where every story has the power to inspire, educate, or transform.
             </p>
             <p style={{ fontSize: '1.125rem', lineHeight: '1.8' }}>
-              We believe that great content should be like gold—rare, valuable, and enduring. That's why 
+              We believe that great content should be like gold—rare, valuable, and enduring. That&apos;s why 
               every piece we publish undergoes rigorous editorial review and reflects our commitment to 
               excellence in digital storytelling.
             </p>

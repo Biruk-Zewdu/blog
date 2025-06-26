@@ -41,8 +41,8 @@ export default function ContactPage() {
         <div className="container">
           <h1 className="hero-title">Get in Touch</h1>
           <p className="hero-subtitle">
-            We'd love to hear from you. Whether you have a story idea, feedback, or just want to say hello, 
-            we're here to connect with our amazing community.
+            We&apos;d love to hear from you. Whether you have a story idea, feedback, or just want to say hello, 
+            we&apos;re here to connect with our amazing community.
           </p>
         </div>
       </section>
@@ -234,7 +234,7 @@ export default function ContactPage() {
                 <h3 style={{ marginBottom: '0.75rem', fontSize: '1.1rem' }}>How can I submit a guest article?</h3>
                 <p style={{ margin: 0 }}>
                   Send your pitch to editorial@thegildedpost.com with a brief outline, your bio, and 2-3 
-                  writing samples. We'll review and get back to you within 48 hours.
+                  writing samples. We&apos;ll review and get back to you within 48 hours.
                 </p>
               </div>
             </div>
@@ -243,7 +243,7 @@ export default function ContactPage() {
               <div className="card-body">
                 <h3 style={{ marginBottom: '0.75rem', fontSize: '1.1rem' }}>Do you accept sponsored content?</h3>
                 <p style={{ margin: 0 }}>
-                  We're selective about partnerships and only work with brands that align with our values. 
+                  We&apos;re selective about partnerships and only work with brands that align with our values. 
                   Contact hello@thegildedpost.com for partnership inquiries.
                 </p>
               </div>
@@ -264,7 +264,7 @@ export default function ContactPage() {
                 <h3 style={{ marginBottom: '0.75rem', fontSize: '1.1rem' }}>Can I republish your articles?</h3>
                 <p style={{ margin: 0 }}>
                   Please contact us at hello@thegildedpost.com to discuss republishing rights. 
-                  We're generally open to syndication with proper attribution.
+                  We&apos;re generally open to syndication with proper attribution.
                 </p>
               </div>
             </div>
@@ -273,7 +273,7 @@ export default function ContactPage() {
       </section>
 
       <section className="container" style={{ padding: '4rem 0', textAlign: 'center' }}>
-        <h2 style={{ marginBottom: '1rem' }}>We're Here to Help</h2>
+        <h2 style={{ marginBottom: '1rem' }}>We&apos;re Here to Help</h2>
         <p className="lead" style={{ marginBottom: '2rem' }}>
           We aim to respond to all inquiries within 24 hours during business days.
         </p>

@@ -18,15 +18,15 @@ const postsData = {
   },
   'third-post': {
     title: 'The Art of Storytelling in the Modern Era',
-    content: 'Storytelling is an ancient art form that continues to captivate audiences across generations. In the modern era, with the proliferation of digital media, the ways in which stories are told have diversified. This post examines the enduring power of narrative and its relevance in today\'s fast-paced world.',
+    content: 'Storytelling is an ancient art form that continues to captivate audiences across generations. In the modern era, with the proliferation of digital media, the ways in which stories are told have diversified. This post examines the enduring power of narrative and its relevance in today&apos;s fast-paced world.',
     category: 'Culture',
     readTime: '4 min read',
     publishDate: 'March 10, 2024',
   },
 };
 
-export default function PostPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   const post = postsData[slug as keyof typeof postsData];
 
   if (!post) {
@@ -38,7 +38,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
               Post Not Found
             </h1>
             <p style={{ marginBottom: '2rem', fontSize: '1.1rem' }}>
-              The article you're looking for doesn't exist or may have been moved.
+              The article you&apos;re looking for doesn&apos;t exist or may have been moved.
             </p>
             <Link href="/" className="btn btn-primary">
               ← Back to Home
@@ -104,7 +104,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
               <Link href="/" className="btn btn-primary">
                 More Articles
               </Link>
-              <Link href="#contact" className="btn btn-secondary">
+              <Link href="/contact" className="btn btn-secondary">
                 Stay Updated
               </Link>
             </div>
